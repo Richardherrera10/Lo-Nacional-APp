@@ -21,6 +21,18 @@ const routes: Routes = [
   },  {
     path: 'order-history',
     loadChildren: () => import('./order-history/order-history.module').then( m => m.OrderHistoryPageModule)
+  },
+  {
+    path: 'menu',
+    loadChildren: () => import('./menu/menu/menu.module').then( m => m.MenuPageModule)
+  },
+  {
+    path: 'm01-bebidas',
+    loadChildren: () => import('./menu/m01-bebidas/m01-bebidas.module').then( m => m.M01BebidasPageModule)
+  },
+  {
+    path: 'm02-bebidas',
+    loadChildren: () => import('./menu/m02-bebidas/m02-bebidas.module').then( m => m.M02BebidasPageModule)
   }
 
 
