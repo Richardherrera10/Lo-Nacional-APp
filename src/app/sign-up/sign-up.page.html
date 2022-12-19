@@ -7,12 +7,12 @@
 <ion-content>
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Inicio de Sesión</ion-card-title>
+      <ion-card-title>Registrarse</ion-card-title>
       <img src="/assets/rest.png" alt="">
     </ion-card-header>
   
     <ion-card-content>
-      <form [formGroup] = "formLogin" >
+      <form [formGroup] = "formReg" >
         <ion-item>
           <ion-label>Nombre de usuario:</ion-label>
           <ion-input placeholder="Escriba nombre de usuario" formControlName="email"></ion-input>
@@ -25,35 +25,35 @@
         <br>
         <ion-button (click) = "onSubmit()">Iniciar Sesión</ion-button>
     </form>
-
     </ion-card-content>
     
   
   </ion-card>
 </ion-content> -->
 
+
 <ion-header>
   <ion-toolbar>
     <ion-buttons (click) = "toMain()" slot="start">
       <ion-back-button default-href="#"></ion-back-button>
     </ion-buttons>
-    <ion-title>INICIO DE SESIÓN</ion-title>
+    <ion-title>REGISTRO</ion-title>
   </ion-toolbar>
+  <ion-title>Crear nueva cuenta</ion-title>
 </ion-header>
 <ion-content>
-  <form [formGroup] = "formLogin">
+  <form [formGroup] = "formReg">
     <ion-item lines="full">
-      <ion-label position="floating">Email</ion-label>
-      <ion-input placeholder="Escriba su correo" formControlName="email"></ion-input>
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input placeholder="Escriba nombre de usuario" formControlName="email"></ion-input>
     </ion-item>
     <ion-item lines="full">
-      <ion-label position="floating">Password</ion-label>
+      <ion-label position="floating">Contraseña</ion-label>
       <ion-input placeholder="Escriba contraseña" type="password" class="form-control" formControlName="password"></ion-input>
     </ion-item>
     <ion-row>
       <ion-col>
-        <ion-button (click) = "onSubmit()" type="submit" color="danger" expand="block">Sign In</ion-button>
-        
+        <ion-button (click) = "onSubmit()">Registrarse</ion-button>
       </ion-col>
     </ion-row>
   </form>

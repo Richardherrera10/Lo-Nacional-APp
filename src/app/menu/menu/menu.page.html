@@ -1,9 +1,91 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>menu</ion-title>
-  </ion-toolbar>
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-button (click) = "onSubmit()" size="large">
+      Cerrar Sesión
+    </ion-button>
+  </ion-buttons>
+  <ion-title>MENU</ion-title>
+  <ion-buttons slot="end">
+    <ion-button [routerLink]="['/order']">
+      ORDEN
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
 </ion-header>
-
 <ion-content>
+  <div class="container">
+    <div class="row">
 
+      <div class="col-12 mt-6">
+        <div class="card">
+          <div class="d-flex">
+            <img src="/assets/caldo.jpg" alt="" width="80" class="mr-4">
+            <div class="ml-3 card-item-info">
+              <p class="mb-0 text-black">Caldo de res</p>
+              <p class="mb-0 text-black h3 fst-italic">Q.60.00</p>
+              <p class="mb-0 text-black fst-italic">Delicioso caldo de res preparado con los mejores ingredientes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 mt-3">
+        <div class="card">
+          <div class="d-flex">
+            <img src="/assets/horchata.jpg" alt="" width="80" class="mr-4">
+            <div class="ml-3 card-item-info">
+              <p class="mb-0 text-black">Horchata</p>
+              <p class="mb-0 text-black h3 fst-italic">Q.25.00</p>
+              <p class="mb-0 text-black fst-italic">Deliciosa bebida horchata natural</p>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+      <div class="col-12 mt-3">
+        <div class="card">
+          <div class="d-flex">
+            <img src="/assets/pasta.jpg" alt="" width="80" class="mr-4">
+            <div class="ml-3 card-item-info">
+              <p class="mb-0 text-black">Pasta pomodoro</p>
+              <p class="mb-0 text-black h3 fst-italic">Q.75.00</p>
+              <p class="mb-0 text-black fst-italic">Deliciosa pasta pomodoro con elementos nacionales</p>
+            </div>
+          </div>
+ 
+        </div>
+      </div>
+
+      <div class="col-12 mt-3">
+        <div class="card">
+          <div class="d-flex">
+            <img src="/assets/burrito.jpg" alt="" width="80" class="mr-4">
+            <div class="ml-3 card-item-info">
+              <p class="mb-0 text-black">Burrito de pollo</p>
+              <p class="mb-0 text-black h3 fst-italic">Q.75.00</p>
+              <p class="mb-0 text-black fst-italic">Burritos de pollo a la plancha</p>
+            </div>
+          </div>
+ 
+        </div>
+      </div>
+
+      <div class="col-12 mt-3">
+        <div class="card">
+          <div class="d-flex">
+            <img src="/assets/hamburguesa.jpg" alt="" width="80" class="mr-4">
+            <div class="ml-3 card-item-info">
+              <p class="mb-0 text-black">Hamburguesa sencilla</p>
+              <p class="mb-0 text-black h3 fst-italic">Q.75.00</p>
+              <p class="mb-0 text-black fst-italic">Deliciosa hamburguesa sencilla con carne, lechucha, tomate y queso</p>
+            </div>
+          </div>
+ 
+        </div>
+      </div>
+
+    </div> <!-- Termina el row -->
+  </div>
 </ion-content>

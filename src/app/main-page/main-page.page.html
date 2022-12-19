@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      RESTAURANTE LO NACIONAL
+    </ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-title> BIENVENIDO</ion-title>
+  <img src="/assets/rest.png" alt="rest">
+</ion-content>
+
+<ion-content class="auth-form">
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-button [routerLink]="['/sign-up']" expand="block" color="primary">REGISTRARSE</ion-button>
+        <div class="row">
+          <div class="col">
+              <div class="text-center">
+                  <h5 style="text-align: center;">¿Ya es usuario?</h5>
+              </div>
+          </div>
+      </div>
+        
+        <ion-button [routerLink]="['/login']" expand="block" color="danger">INICIAR SESIÓN</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
