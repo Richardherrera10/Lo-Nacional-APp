@@ -1,6 +1,8 @@
 <ion-header>
   <ion-toolbar>
-
+    <ion-buttons (click) = "toMenu()" slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
     <ion-title>Carrito de Compras</ion-title>
     <ion-buttons slot="end">
       <ion-button [routerLink]="['/order-history']">Historial</ion-button>
